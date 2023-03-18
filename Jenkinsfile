@@ -25,6 +25,7 @@ pipeline {
                         sh "kubectl apply -f complete-demo.yaml"
                         sh "kubectl apply -f manifests-monitoring"
                         sh "kubectl apply -f webapp.yaml"
+                        sh "chmod +x deploy-certbot.sh"
                         sh "./deploy-certbot.sh"
                     }
                 }

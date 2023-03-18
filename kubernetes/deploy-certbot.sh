@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Make the script executable
-chmod +x deploy-certbot.sh
-
 # Install Certbot and the Nginx plugin
 kubectl run certbot --image=certbot/certbot:v1.23.0 --restart=Never -- /bin/sh -c "apk add --no-cache nginx; apk add --no-cache certbot; apk add --no-cache certbot-nginx"
 
