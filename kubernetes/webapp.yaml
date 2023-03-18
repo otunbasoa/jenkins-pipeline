@@ -23,7 +23,7 @@ spec:
       containers:
         - name: frontend-container
           image: otunbasoa/frontendvm
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
 ---
@@ -70,7 +70,7 @@ spec:
       containers:
         - name: blog-node-container
           image: otunbasoa/backendvm
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
 ---
