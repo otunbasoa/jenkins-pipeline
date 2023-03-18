@@ -13,7 +13,7 @@ spec:
         app: nginx-mongodb
     spec:
       containers:
-        - name: otunbasoa/profile
+        - name: profile
           image: otunbasoa/profile
           ports:
             - containerPort: 80
