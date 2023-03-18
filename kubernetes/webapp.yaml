@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: frontendvm
+          image: otunbasoa/frontendvm
           imagePullPolicy: Never
           ports:
             - containerPort: 80
@@ -69,7 +69,7 @@ spec:
     spec:
       containers:
         - name: blog-node-container
-          image: backendvm
+          image: otunbasoa/backendvm
           imagePullPolicy: Never
           ports:
             - containerPort: 3000
@@ -116,7 +116,7 @@ spec:
     spec:
       containers:
         - name: mongodb-container
-          image: mongo
+          image: otunbasoa/mongo
           env:
             - name: MONGO_INITDB_DATABASE
               value: database
